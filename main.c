@@ -25,3 +25,9 @@ int buf_empty(void)
 {
     return (head == tail);
 }
+
+/* 在 feature/uart 分支上加的：把收到的字节塞进缓冲 */
+void uart_rx_byte(uint8_t c)
+{
+    buf_put(c);
+}
