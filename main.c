@@ -20,3 +20,8 @@ int buf_get(uint8_t *c)
     tail = (tail + 1) % BUF_SIZE;
     return 1;
 }
+
+int buf_empty(void)
+{
+    return (head == tail);
+}
