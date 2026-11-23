@@ -6,3 +6,10 @@ void uart_putc(uint8_t c)
     while (!(USART1->SR & (1 << 7))) { }   /* 等 TXE 置位 */
     USART1->DR = c;
 }
+void uart_puts(const char *s)
+{
+    while (*s) {
+        uart_putc((uint8_t)*s);
+        s++;
+    }
+}
