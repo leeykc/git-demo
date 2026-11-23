@@ -13,3 +13,4 @@ void uart_puts(const char *s)
         s++;
     }
 }
+/* TODO: 改成 DMA 发送 */
