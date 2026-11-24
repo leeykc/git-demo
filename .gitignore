@@ -1,0 +1,26 @@
+# ---- Keil / MDK 编译产物 ----
+Objects/
+Listings/
+*.o
+*.d
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.crf
+*.dep
+*.lnp
+
+# ---- Keil 界面配置（每个人窗口布局不同）----
+*.uvguix.*
+
+# ---- 备份与临时文件 ----
+*~
+*.bak
+*.orig
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.DS_Store
+Thumbs.db
